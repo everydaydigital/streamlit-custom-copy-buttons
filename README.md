@@ -13,13 +13,12 @@ With this method, we can add text directly to the clipboard using Javascript by 
 ```javascript
 <button id="copyButton" onclick="copyToClipboard()">📋</button>
 ```
-
-
-&nbsp;
-### The trick here, is that while we can’t just put Javascript anywhere we want in Streamlit - we can still access Javascript by using a separate html page embedded as an iframe.
 &nbsp;
 
+**The trick here, is that while we can’t just put Javascript anywhere we want in Streamlit - we can still access Javascript by using a separate html page embedded as an iframe.**
 
+&nbsp;
+### Setup Instructions
 1. Start off by hosting [copy.html](copy.html) somewhere on the same domain as your streamlit script (otherwise Streamlit will block the iframe content from being embedded).
 
 2. Create a Streamlit script to embed [copy.html](copy.html) as an iframe using st.markdown like this:
@@ -36,5 +35,8 @@ With this method, we can add text directly to the clipboard using Javascript by 
   ```
 
 3. Click on the “📋” button in Streamlit and the *text_to_copy* value will be loaded to the clipboard with Javascript via the url argument sent to the embedded [copy.html](copy.html) file.
+
+&nbsp;
+&nbsp;
 
 *There is also a 1 second transition that updates the button label to "✔", giving the user some feedback that the function was activated.*
