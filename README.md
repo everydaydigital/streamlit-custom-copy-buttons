@@ -34,4 +34,4 @@ st.markdown(f'<iframe src="{iframe_url}"></iframe>', unsafe_allow_html=True)
 
 Now when you click on the “📋” button in Streamlit, the *text_to_copy* value will be sent to the [copy.html](copy.html) file via the url argument and copied to the the users' clipboard with Javascript.
 
-There is also a 2 second transition that changes the button label so the user has some feedback that the function was activated.
+There is also a 1 second transition that updates the button label so the user has some feedback when the function is activated.
