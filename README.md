@@ -10,9 +10,12 @@ Pass any text string directly to the copy.html file (hosted on the same domain) 
 https://{your-streamlit-domain}/files/copy.html?copy={your_text_string}
 ```
 
-With this method, we can add text directly to the clipboard using Javascript by clicking on an easily themable custom button.
+With this method, we can add text directly to the clipboard using Javascript by clicking on an easily themeable custom button.
 
 *Say goodbye to st.code!*
+```
+<button id="copyButton" onclick="copyToClipboard()">Copy to Clipboard</button>
+```
 
 The trick here is that while we can’t just put Javascript anywhere we want it in Streamlit - we can still access Javascript by using a separate html page embedded as an iframe.
 
