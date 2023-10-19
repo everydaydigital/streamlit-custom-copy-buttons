@@ -12,7 +12,7 @@ With this method, we can add text directly to the clipboard using Javascript by 
 
 *Say goodbye to st.code!*
 ```javascript
-<button id="copyButton" onclick="copyToClipboard()">Copy to Clipboard</button>
+<button id="copyButton" onclick="copyToClipboard()">📋</button>
 ```
 
 The trick here is that while we can’t just put Javascript anywhere we want it in Streamlit - we can still access Javascript by using a separate html page embedded as an iframe.
