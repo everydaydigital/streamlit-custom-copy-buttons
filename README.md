@@ -28,7 +28,7 @@ st.markdown(f'<iframe src="{iframe_url}"></iframe>', unsafe_allow_html=True)
 ```
 
 
-Now when you click on the “Copy to Clipboard” button in Streamlit, the text_to_copy value (eg “Hello, World!”) will be sent to the copy.html file via the url argument and copied to the the users' clipboard with Javascript.
+Now when you click on the “Copy to Clipboard” button in Streamlit, the text_to_copy value (eg “Hello, World!”) will be sent to the copy.html file via the url argument "?copy=" and copied to the the users' clipboard with Javascript.
 
 There is also a 2 second transition that changes the button label so the user has some feedback that the function was activated.
 
