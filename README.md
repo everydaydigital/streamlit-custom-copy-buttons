@@ -1,12 +1,17 @@
 # streamlit-custom-copy-buttons
 Custom "Copy to Clipboard" Buttons for Streamlit
 
-<video src="https://github.com/everydaydigital/streamlit-custom-copy-buttons/assets/12283888/9a231e14-c7b1-4f84-972f-295d64c65ad8" width="360px"></video>
+
+https://github.com/everydaydigital/streamlit-custom-copy-buttons/assets/12283888/bbd117b4-50fc-4be4-ae03-eec6a81cf942
+
 
 Pass any text string directly to the [copy.html](copy.html) file embedded as an iframe in your Streamlit script like this:
 ```css
 https://{your-streamlit-domain}/files/copy.html?copy={your_text_string}
 ```
+
+&nbsp;
+
 
 With this method, we can add text directly to the clipboard using Javascript by clicking on an easily themeable custom button. 
 *Say goodbye to st.code!*
