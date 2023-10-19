@@ -2,7 +2,7 @@
 Custom "Copy to Clipboard" Buttons for Streamlit
 
 
-https://github.com/everydaydigital/streamlit-custom-copy-buttons/assets/12283888/bbd117b4-50fc-4be4-ae03-eec6a81cf942
+https://github.com/everydaydigital/streamlit-custom-copy-buttons/assets/12283888/4206c097-ade3-4fe6-a63d-8720f8cc56af
 
 
 Pass any text string directly to the [copy.html](copy.html) file embedded as an iframe in your Streamlit script like this:
