@@ -1,5 +1,5 @@
 # streamlit-custom-copy-buttons
-Custom "Copy to Clipboard" buttons for Streamlit
+Custom "Copy to Clipboard" Buttons for Streamlit
 
 
 <video src="https://github.com/everydaydigital/streamlit-custom-copy-buttons/assets/12283888/9a231e14-c7b1-4f84-972f-295d64c65ad8" width="360px"></video>
