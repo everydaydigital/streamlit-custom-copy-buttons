@@ -12,7 +12,7 @@
 <body>
     <input type="text" id="textToCopy" value="" style="position: absolute; left: -9999px;">
 
-    <button id="copyButton" onclick="copyToClipboard()">Copy to Clipboard</button>
+    <button id="copyButton" onclick="copyToClipboard()">📋</button>
 
     <script>
         function getQueryParam(name) {
@@ -26,16 +26,20 @@
             textToCopy.value = decodeURIComponent(copyText);
         }
 
+        const copyButton = document.getElementById("copyButton");
+        copyButton.title = textToCopy.value;
+
         function copyToClipboard() {
             textToCopy.select();
             document.execCommand("copy");
 
-            // Replace the button label with "Link copied" for 2 seconds
-            const copyButton = document.getElementById("copyButton");
-            copyButton.textContent = "Link copied";
+            const clipboardContents = textToCopy.value;
+
+            copyButton.textContent = "✔";
             setTimeout(function () {
-                copyButton.textContent = "Copy to Clipboard";
-            }, 2000);
+                copyButton.textContent = "📋";
+                copyButton.title = textToCopy.value;
+            }, 1000);
         }
     </script>
 </body>
