@@ -8,14 +8,17 @@ Pass any text string directly to the [copy.html](copy.html) file embedded as an 
 https://{your-streamlit-domain}/files/copy.html?copy={your_text_string}
 ```
 
-With this method, we can add text directly to the clipboard using Javascript by clicking on an easily themeable custom button.
-
+With this method, we can add text directly to the clipboard using Javascript by clicking on an easily themeable custom button. 
 *Say goodbye to st.code!*
 ```javascript
 <button id="copyButton" onclick="copyToClipboard()">📋</button>
 ```
 
-The trick here is that while we can’t just put Javascript anywhere we want it in Streamlit - we can still access Javascript by using a separate html page embedded as an iframe.
+
+&nbsp;
+### The trick here, is that while we can’t just put Javascript anywhere we want in Streamlit - we can still access Javascript by using a separate html page embedded as an iframe.
+&nbsp;
+
 
 1. Start off by hosting [copy.html](copy.html) somewhere on the same domain as your streamlit script (otherwise Streamlit will block the iframe content from being embedded).
 
