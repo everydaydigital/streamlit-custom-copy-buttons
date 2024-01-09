@@ -36,7 +36,7 @@ With this method, we can add text directly to the clipboard using Javascript by 
   hosted_html_file = "https://everydayswag.org/files/copy.html"
   iframe_url = f"{hosted_html_file}?copy={text_to_copy}"
   
-  st.markdown(f'<iframe src="{iframe_url}"></iframe>', unsafe_allow_html=True)
+  st.markdown(f'<iframe style="overflow: hidden;" src="{iframe_url}"></iframe>', unsafe_allow_html=True)
   ```
 
 3. Click on the “📋” button in Streamlit and the *text_to_copy* value will be loaded to the clipboard with Javascript via the url argument sent to the embedded [copy.html](copy.html) file.
