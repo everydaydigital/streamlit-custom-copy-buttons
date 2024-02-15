@@ -1,6 +1,7 @@
 # streamlit-custom-copy-buttons
 Custom "Copy to Clipboard" Buttons for Streamlit
 
+*last tested working with: streamlit==1.28.0*
 
 https://github.com/everydaydigital/streamlit-custom-copy-buttons/assets/12283888/4206c097-ade3-4fe6-a63d-8720f8cc56af
 
